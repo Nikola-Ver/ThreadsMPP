@@ -1,0 +1,13 @@
+D:\C#\Labs\ThreadsMPP\Threads\Threads\bin\Debug\netcoreapp3.1\Threads.exe
+D:\C#\Labs\ThreadsMPP\Threads\Threads\bin\Debug\netcoreapp3.1\Threads.deps.json
+D:\C#\Labs\ThreadsMPP\Threads\Threads\bin\Debug\netcoreapp3.1\Threads.runtimeconfig.json
+D:\C#\Labs\ThreadsMPP\Threads\Threads\bin\Debug\netcoreapp3.1\Threads.runtimeconfig.dev.json
+D:\C#\Labs\ThreadsMPP\Threads\Threads\bin\Debug\netcoreapp3.1\Threads.dll
+D:\C#\Labs\ThreadsMPP\Threads\Threads\bin\Debug\netcoreapp3.1\Threads.pdb
+D:\C#\Labs\ThreadsMPP\Threads\Threads\obj\Debug\netcoreapp3.1\Threads.csprojAssemblyReference.cache
+D:\C#\Labs\ThreadsMPP\Threads\Threads\obj\Debug\netcoreapp3.1\Threads.AssemblyInfoInputs.cache
+D:\C#\Labs\ThreadsMPP\Threads\Threads\obj\Debug\netcoreapp3.1\Threads.AssemblyInfo.cs
+D:\C#\Labs\ThreadsMPP\Threads\Threads\obj\Debug\netcoreapp3.1\Threads.csproj.CoreCompileInputs.cache
+D:\C#\Labs\ThreadsMPP\Threads\Threads\obj\Debug\netcoreapp3.1\Threads.dll
+D:\C#\Labs\ThreadsMPP\Threads\Threads\obj\Debug\netcoreapp3.1\Threads.pdb
+D:\C#\Labs\ThreadsMPP\Threads\Threads\obj\Debug\netcoreapp3.1\Threads.genruntimeconfig.cache

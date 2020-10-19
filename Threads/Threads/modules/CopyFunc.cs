@@ -22,7 +22,7 @@ namespace Threads.modules
             {
                 File.Copy(from, to, true);
                 Console.WriteLine("Copied file from " + from + " to " + to);
-                CopyDirectory.countOfDoneTasks++;
+                CopyDirectory.CountOfDoneTasks++;
             }
             catch (Exception exception)
             {

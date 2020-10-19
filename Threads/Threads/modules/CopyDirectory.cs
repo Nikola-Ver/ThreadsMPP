@@ -7,8 +7,8 @@ namespace Threads.modules
 {
     class CopyDirectory
     {
-        public static int countOfTasks = 1;
-        public static int countOfDoneTasks = 0;
+        public static int CountOfTasks = 1;
+        public static int CountOfDoneTasks = 0;
         private static List<TaskQueue.TaskDelegate> tasks = new List<TaskQueue.TaskDelegate>();
 
         public static TaskQueue.TaskDelegate[] Copy(string sourceDirectory, string targetDirectory)
@@ -27,7 +27,7 @@ namespace Threads.modules
         public static void CopyAll(DirectoryInfo source, DirectoryInfo target)
         {
             var files = source.GetFiles();
-            countOfTasks += files.Length;
+            CountOfTasks += files.Length;
 
             for (int i = 0; i < files.Length; i++)
                 tasks.Add(new CopyFunc(Path.Combine(source.FullName, files[i].Name), Path.Combine(target.FullName, files[i].Name)).Invoke);

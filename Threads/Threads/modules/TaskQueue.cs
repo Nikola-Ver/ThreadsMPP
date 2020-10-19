@@ -7,42 +7,35 @@ namespace Threads.modules
     class TaskQueue
     {
         public delegate void TaskDelegate();
-
         private ConcurrentQueue<TaskDelegate> queueTasks = new ConcurrentQueue<TaskDelegate>();
-
         private Thread[] arrayOfThreads;
 
-        private bool flagWork = true;
-        
         public TaskQueue(int quantityThreads)
         {
+            if (quantityThreads <= 0) throw new Exception("Wrong number of threads");
+
             arrayOfThreads = new Thread[quantityThreads];
             for (int i = 0; i < quantityThreads; i++)
             {
                 arrayOfThreads[i] = new Thread(TakeTask);
-                arrayOfThreads[i].Start();
+                arrayOfThreads[i].Start(i);
             }
         }
 
         private void TakeTask()
         {
-            while (flagWork)
+            while (CopyDirectory.countOfTasks != CopyDirectory.countOfDoneTasks)
             {
                 if (queueTasks.TryDequeue(out var task))
                     task.Invoke();
                 else
-                    Thread.Sleep(300);
+                    Thread.Sleep(100);
             }
         }
 
         public void EnqueueTask(TaskDelegate task)
         {
             queueTasks.Enqueue(task);
-        }
-
-        public void StopWork()
-        {
-            flagWork = false;
         }
     }
 }

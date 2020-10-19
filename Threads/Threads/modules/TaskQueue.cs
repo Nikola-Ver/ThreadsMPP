@@ -27,7 +27,7 @@ namespace Threads.modules
             while (CopyDirectory.CountOfTasks != CopyDirectory.CountOfDoneTasks)
             {
                 if (queueTasks.TryDequeue(out var task))
-                    task.Invoke();
+                    task?.Invoke();
                 else
                     Thread.Sleep(100);
             }

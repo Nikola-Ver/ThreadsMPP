@@ -12,7 +12,7 @@ namespace Threads.modules
 
         public TaskQueue(int quantityThreads)
         {
-            if (quantityThreads <= 0) throw new Exception("Wrong number of threads");
+            if (quantityThreads <= 0 && quantityThreads <= 400) throw new Exception("Wrong number of threads");
 
             arrayOfThreads = new Thread[quantityThreads];
             for (int i = 0; i < quantityThreads; i++)

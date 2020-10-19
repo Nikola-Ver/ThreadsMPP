@@ -14,6 +14,7 @@ namespace Threads.modules
         {
             if (quantityThreads <= 0) throw new Exception("Wrong number of threads");
 
+            arrayOfThreads = new Thread[quantityThreads];
             for (int i = 0; i < quantityThreads; i++)
             {
                 arrayOfThreads[i] = new Thread(TakeTask);

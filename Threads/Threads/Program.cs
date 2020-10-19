@@ -13,6 +13,7 @@ namespace Threads
              var from = Console.ReadLine();
             Console.Write("The file where we copy: ");
             var to = Console.ReadLine();
+            Console.WriteLine("\n");
 
             try
             {
@@ -29,7 +30,7 @@ namespace Threads
                 }
 
                 while (CopyDirectory.countOfDoneTasks != CopyDirectory.countOfTasks) { }
-                Console.WriteLine("\n\nCopied files" + CopyDirectory.countOfDoneTasks);
+                Console.WriteLine("\n\nCopied files " + CopyDirectory.countOfDoneTasks);
             }
             catch(Exception e)
             {

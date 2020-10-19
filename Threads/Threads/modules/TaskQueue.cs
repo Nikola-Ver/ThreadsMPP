@@ -18,7 +18,7 @@ namespace Threads.modules
             for (int i = 0; i < quantityThreads; i++)
             {
                 arrayOfThreads[i] = new Thread(TakeTask);
-                arrayOfThreads[i].Start(i);
+                arrayOfThreads[i].Start();
             }
         }
 

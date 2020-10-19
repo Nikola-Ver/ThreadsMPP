@@ -18,7 +18,6 @@ namespace Threads
             {
                 var taskQueue = new TaskQueue(int.Parse(countOfThreads));
                 var copyTasks = CopyDirectory.Copy(from, to);
-
                 CopyDirectory.countOfTasks--;
 
                 if (copyTasks != null)
@@ -30,7 +29,7 @@ namespace Threads
                 }
 
                 while (CopyDirectory.countOfDoneTasks != CopyDirectory.countOfTasks) { }
-                Console.WriteLine("da");
+                Console.WriteLine("\n\nCopied files" + CopyDirectory.countOfDoneTasks);
             }
             catch(Exception e)
             {
